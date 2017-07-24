@@ -1,0 +1,45 @@
+body{
+    text-align: center;
+    font-family: "Comic Sans MS", "Comic Sans", sans-serif;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+nav a{
+    display: block;
+    padding: 20px 2%;
+    width: 100%;
+    color: white;
+    text-decoration: none;
+    background: orange;
+    border-radius: 4px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    text-shadow: 0 1px 1px rgba( 0, 0, 0, 0.45 );
+    box-shadow: 0 4px 4px rgba( 0, 0, 0, 0.15 );
+}
+
+nav a:hover{
+    background: red;
+}
+
+@media screen and ( min-width: 600px ){
+    nav a{
+        flex-basis: 45%;
+    }
+}
+
+@media screen and ( min-width: 900px ){
+    nav{
+        flex-wrap: nowrap;
+    }
+
+    nav a{
+        flex-basis: 20%;
+    }
+}
