@@ -13,6 +13,19 @@ body{
     text-align: center;
     font-family: "Comic Sans MS", "Comic Sans", sans-serif;
 }
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+#home, #blog, #about, #contact{
+  border-radius: 10%;
+  background-color: orange;
+  padding: 50px;
+  margin: 10px;
+  text-decoration: none;
+  flex-grow: 1;
+}
 
 
 
@@ -22,8 +35,15 @@ body{
 
 /**** Tablet Styles ***********************************/
 @media (min-width: 600px) {
+  .navbar {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
   #home {
     color: red;
+  }
+  #home, #blog, #about, #contact{
+    width: 25%
   }
 }
 
