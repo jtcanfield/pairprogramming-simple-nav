@@ -19,17 +19,14 @@ body{
   flex-direction: column;
 }
 #home, #blog, #about, #contact{
-  border-radius: 10%;
+  color: White;
+  border-radius: 10px;
   background-color: orange;
   padding: 50px;
-  margin: 10px;
+  margin: 5px;
   text-decoration: none;
   flex-grow: 1;
 }
-
-
-
-
 
 
 
@@ -39,26 +36,16 @@ body{
     flex-direction: row;
     flex-wrap: wrap;
   }
-  #home {
-    color: red;
-  }
   #home, #blog, #about, #contact{
     width: 25%
   }
 }
 
 
-
-
-
-
-
-
-
-
 /**** Desktop Styles ***********************************/
 @media (min-width: 900px) {
-  #home {
-    color: blue;
+  .navbar {
+    flex-direction: row;
+    flex-wrap: nowrap;
   }
 }
